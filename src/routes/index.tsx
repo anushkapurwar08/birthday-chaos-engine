@@ -254,7 +254,7 @@ function BirthdayCard() {
       <section className="py-24 bg-lavender/15">
         <div className="text-center mb-16 px-4">
           <span className="font-pixel text-lavender block mb-2 tracking-widest uppercase">[ scroll through time → ]</span>
-          <h3 className="font-hand text-5xl md:text-7xl text-zinc-900">Timeline of a Queen</h3>
+          <h3 className="font-hand text-5xl md:text-7xl text-zinc-900">Timeline of Ivy</h3>
         </div>
 
         <div className="flex items-center gap-16 md:gap-24 px-[10vw] md:px-[20vw] overflow-x-auto pb-20 snap-x no-scrollbar">
