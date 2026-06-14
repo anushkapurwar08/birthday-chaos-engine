@@ -187,7 +187,7 @@ function BirthdayCard() {
       <section className="py-24 bg-midnight text-white">
         <div className="px-6 md:px-12 mb-10 max-w-7xl mx-auto">
           <h2 className="font-pixel text-bubblegum text-2xl tracking-widest">
-            WHAT'S NEW ON: THE MAIN CHARACTER
+            WHAT'S NEW ON: IVY, THE MAIN CHARACTER
           </h2>
           <div className="h-1 w-full bg-gradient-to-r from-bubblegum via-lavender to-transparent mt-3 rounded-full" />
         </div>
