@@ -356,10 +356,10 @@ function BirthdayCard() {
         <div className="container mx-auto px-6 relative z-10 text-center">
           <div className="max-w-2xl mx-auto">
             <p className="font-hand text-3xl md:text-5xl text-lavender mb-8 leading-tight">
-              "No matter how big you grow, you'll always be my tiny chaos goblin."
+              "No matter how big you grow, Ivy, you'll always be my tiny chaos goblin."
             </p>
             <h4 className="font-display text-bubblegum text-2xl md:text-3xl tracking-tight mb-12 animate-flicker">
-              HAPPY BIRTHDAY ✨
+              HAPPY BIRTHDAY, IVY ✨
             </h4>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 opacity-90">
