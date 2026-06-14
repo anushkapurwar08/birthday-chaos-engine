@@ -294,7 +294,7 @@ function BirthdayCard() {
         ) : (
           <div className="mt-12 max-w-2xl mx-auto px-6 animate-notif-in">
             <p className="font-hand text-3xl md:text-4xl text-zinc-800 leading-tight">
-              "Wishing you a year of stupid jokes, loud playlists, and being unapologetically yourself. You earned this level. Now go cause some chaos."
+              "Ivy — wishing you a year of stupid jokes, loud playlists, and being unapologetically yourself. You earned this level. Now go cause some chaos."
             </p>
           </div>
         )}
