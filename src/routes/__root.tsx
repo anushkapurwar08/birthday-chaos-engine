@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Level 14 Unlocked ✨ — A Birthday Card" },
-      { name: "description", content: "An interactive 14th birthday universe — bedroom desk chaos, memory tunnel, and one very dangerous red button." },
+      { title: "Happy Birthday Ivy!" },
+      { name: "description", content: "Level 14 Unlocked is an interactive digital birthday card designed as a \"main character birthday universe.\"" },
       { name: "author", content: "Made with chaos & love" },
-      { property: "og:title", content: "Level 14 Unlocked ✨" },
-      { property: "og:description", content: "Click around. It's her birthday." },
+      { property: "og:title", content: "Happy Birthday Ivy!" },
+      { property: "og:description", content: "Level 14 Unlocked is an interactive digital birthday card designed as a \"main character birthday universe.\"" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Happy Birthday Ivy!" },
+      { name: "twitter:description", content: "Level 14 Unlocked is an interactive digital birthday card designed as a \"main character birthday universe.\"" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e81b2c24-0cd5-43fc-9957-943e2f74bc59/id-preview-00af1a6f--6c51bc9c-f56b-48ec-b3d2-f0951d7a6fb2.lovable.app-1781462458392.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e81b2c24-0cd5-43fc-9957-943e2f74bc59/id-preview-00af1a6f--6c51bc9c-f56b-48ec-b3d2-f0951d7a6fb2.lovable.app-1781462458392.png" },
     ],
     links: [
       {
