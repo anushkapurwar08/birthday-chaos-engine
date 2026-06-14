@@ -7,7 +7,7 @@ import { ChaosButton } from "@/components/ChaosButton";
 import { InteractiveCake } from "@/components/InteractiveCake";
 
 import polaroidBesties from "@/assets/polaroid-besties.jpg";
-import babyMom from "@/assets/baby-mom.jpg.asset.json";
+import babyMom from "@/assets/baby-mom.jpg";
 import age5 from "@/assets/age-5.jpg";
 import age10 from "@/assets/age-10.jpg";
 import age12 from "@/assets/age-12.jpg";
@@ -357,7 +357,7 @@ function BirthdayCard() {
             </h4>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 opacity-90">
-              {[babyMom.url, age10, age12, age14].map((img, i) => (
+              {[babyMom, age10, age12, age14].map((img, i) => (
                 <div
                   key={i}
                   className="aspect-square rounded-lg overflow-hidden border border-white/20"
