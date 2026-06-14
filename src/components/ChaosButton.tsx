@@ -2,10 +2,10 @@ import { useState } from "react";
 import confetti from "canvas-confetti";
 
 const POPUPS = [
-  "YOU ARE NOW OFFICIALLY OLD",
+  "IVY = OFFICIALLY 14",
   "CRINGE LEVEL +1000",
-  "+9999 AURA",
-  "MAIN CHARACTER ENERGY DETECTED",
+  "+9999 AURA FOR IVY",
+  "MAIN CHARACTER: IVY",
   "DISCO MODE: ENGAGED",
   "RAINING CUPCAKES 🧁",
 ];

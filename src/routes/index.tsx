@@ -19,14 +19,14 @@ import lore3 from "@/assets/lore-3.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Level 14 Unlocked ✨ — A Birthday Card" },
+      { title: "Ivy: Level 14 Unlocked ✨ — A Birthday Card" },
       {
         name: "description",
         content:
-          "An interactive 14th birthday universe — bedroom desk chaos, memory tunnel, and one very dangerous red button.",
+          "Ivy's interactive 14th birthday universe — bedroom desk chaos, memory tunnel, and one very dangerous red button.",
       },
-      { property: "og:title", content: "Level 14 Unlocked ✨" },
-      { property: "og:description", content: "Click around. It's her birthday." },
+      { property: "og:title", content: "Ivy: Level 14 Unlocked ✨" },
+      { property: "og:description", content: "Click around. It's Ivy's birthday." },
     ],
   }),
   component: BirthdayCard,
@@ -127,7 +127,7 @@ function BirthdayCard() {
 
         <div className="container mx-auto h-full relative flex items-center justify-center min-h-[85vh] px-4">
           <h1 className="font-display text-6xl md:text-9xl text-center z-10 leading-none drop-shadow-[6px_6px_0px_var(--bubblegum)]">
-            BIRTHDAY
+            IVY'S
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-bubblegum via-lavender to-hologram animate-shimmer-bg">
               LORE
@@ -187,7 +187,7 @@ function BirthdayCard() {
       <section className="py-24 bg-midnight text-white">
         <div className="px-6 md:px-12 mb-10 max-w-7xl mx-auto">
           <h2 className="font-pixel text-bubblegum text-2xl tracking-widest">
-            WHAT'S NEW ON: THE MAIN CHARACTER
+            WHAT'S NEW ON: IVY, THE MAIN CHARACTER
           </h2>
           <div className="h-1 w-full bg-gradient-to-r from-bubblegum via-lavender to-transparent mt-3 rounded-full" />
         </div>
@@ -208,14 +208,20 @@ function BirthdayCard() {
           ))}
 
           {/* 14 things we love */}
-          <div className="min-w-[300px] md:min-w-[360px] snap-start">
-            <div className="aspect-[16/10] rounded-md p-6 bg-gradient-to-br from-bubblegum via-lavender to-hologram text-midnight flex flex-col justify-between">
-              <p className="font-pixel text-xs uppercase tracking-widest">Limited Series</p>
-              <div>
-                <p className="font-display text-2xl leading-none">14 Things We Love About You</p>
-                <p className="text-xs font-pixel mt-2 opacity-70">Hover the title cards →</p>
+          <div className="min-w-[300px] md:min-w-[360px] snap-start group cursor-pointer">
+            <div className="relative aspect-[16/10] rounded-md overflow-hidden border-2 border-transparent transition-all group-hover:scale-105 group-hover:border-bubblegum">
+              <img src={babyMom} alt="14 things we love about Ivy" width={800} height={500} loading="lazy" className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-br from-bubblegum/70 via-lavender/60 to-hologram/70 mix-blend-multiply" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute top-4 left-4">
+                <p className="font-pixel text-xs uppercase tracking-widest text-white/90">Limited Series</p>
+              </div>
+              <div className="absolute bottom-4 left-4 right-4 text-white">
+                <p className="font-display text-2xl leading-none drop-shadow-lg">14 Things We Love About Ivy</p>
+                <p className="text-xs font-pixel mt-2 opacity-80">Hover the title cards →</p>
               </div>
             </div>
+            <p className="text-xs text-zinc-500 mt-3 font-pixel uppercase tracking-wider">Streaming Now</p>
           </div>
         </div>
       </section>
@@ -248,7 +254,7 @@ function BirthdayCard() {
       <section className="py-24 bg-lavender/15">
         <div className="text-center mb-16 px-4">
           <span className="font-pixel text-lavender block mb-2 tracking-widest uppercase">[ scroll through time → ]</span>
-          <h3 className="font-hand text-5xl md:text-7xl text-zinc-900">Timeline of a Queen</h3>
+          <h3 className="font-hand text-5xl md:text-7xl text-zinc-900">Timeline of Ivy</h3>
         </div>
 
         <div className="flex items-center gap-16 md:gap-24 px-[10vw] md:px-[20vw] overflow-x-auto pb-20 snap-x no-scrollbar">
@@ -288,7 +294,7 @@ function BirthdayCard() {
         ) : (
           <div className="mt-12 max-w-2xl mx-auto px-6 animate-notif-in">
             <p className="font-hand text-3xl md:text-4xl text-zinc-800 leading-tight">
-              "Wishing you a year of stupid jokes, loud playlists, and being unapologetically yourself. You earned this level. Now go cause some chaos."
+              "Ivy — wishing you a year of stupid jokes, loud playlists, and being unapologetically yourself. You earned this level. Now go cause some chaos."
             </p>
           </div>
         )}
@@ -350,10 +356,10 @@ function BirthdayCard() {
         <div className="container mx-auto px-6 relative z-10 text-center">
           <div className="max-w-2xl mx-auto">
             <p className="font-hand text-3xl md:text-5xl text-lavender mb-8 leading-tight">
-              "No matter how big you grow, you'll always be my tiny chaos goblin."
+              "No matter how big you grow, Ivy, you'll always be my tiny chaos goblin."
             </p>
             <h4 className="font-display text-bubblegum text-2xl md:text-3xl tracking-tight mb-12 animate-flicker">
-              HAPPY BIRTHDAY ✨
+              HAPPY BIRTHDAY, IVY ✨
             </h4>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 opacity-90">
