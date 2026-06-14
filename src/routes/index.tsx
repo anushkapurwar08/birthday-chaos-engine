@@ -19,14 +19,14 @@ import lore3 from "@/assets/lore-3.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Level 14 Unlocked ✨ — A Birthday Card" },
+      { title: "Ivy: Level 14 Unlocked ✨ — A Birthday Card" },
       {
         name: "description",
         content:
-          "An interactive 14th birthday universe — bedroom desk chaos, memory tunnel, and one very dangerous red button.",
+          "Ivy's interactive 14th birthday universe — bedroom desk chaos, memory tunnel, and one very dangerous red button.",
       },
-      { property: "og:title", content: "Level 14 Unlocked ✨" },
-      { property: "og:description", content: "Click around. It's her birthday." },
+      { property: "og:title", content: "Ivy: Level 14 Unlocked ✨" },
+      { property: "og:description", content: "Click around. It's Ivy's birthday." },
     ],
   }),
   component: BirthdayCard,
