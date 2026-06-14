@@ -4,7 +4,7 @@ const LINES = [
   "INITIALIZING…",
   "LOADING CHAOS…",
   "LOADING MEMORIES…",
-  "LOADING MAIN CHARACTER…",
+  "LOADING IVY…",
 ];
 
 export function LoadingScreen() {
