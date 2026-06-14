@@ -208,14 +208,20 @@ function BirthdayCard() {
           ))}
 
           {/* 14 things we love */}
-          <div className="min-w-[300px] md:min-w-[360px] snap-start">
-            <div className="aspect-[16/10] rounded-md p-6 bg-gradient-to-br from-bubblegum via-lavender to-hologram text-midnight flex flex-col justify-between">
-              <p className="font-pixel text-xs uppercase tracking-widest">Limited Series</p>
-              <div>
-                <p className="font-display text-2xl leading-none">14 Things We Love About You</p>
-                <p className="text-xs font-pixel mt-2 opacity-70">Hover the title cards →</p>
+          <div className="min-w-[300px] md:min-w-[360px] snap-start group cursor-pointer">
+            <div className="relative aspect-[16/10] rounded-md overflow-hidden border-2 border-transparent transition-all group-hover:scale-105 group-hover:border-bubblegum">
+              <img src={babyMom} alt="14 things we love about Ivy" width={800} height={500} loading="lazy" className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-br from-bubblegum/70 via-lavender/60 to-hologram/70 mix-blend-multiply" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute top-4 left-4">
+                <p className="font-pixel text-xs uppercase tracking-widest text-white/90">Limited Series</p>
+              </div>
+              <div className="absolute bottom-4 left-4 right-4 text-white">
+                <p className="font-display text-2xl leading-none drop-shadow-lg">14 Things We Love About Ivy</p>
+                <p className="text-xs font-pixel mt-2 opacity-80">Hover the title cards →</p>
               </div>
             </div>
+            <p className="text-xs text-zinc-500 mt-3 font-pixel uppercase tracking-wider">Streaming Now</p>
           </div>
         </div>
       </section>
