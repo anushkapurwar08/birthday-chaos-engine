@@ -49,7 +49,7 @@ export function LoadingScreen() {
           <div className="h-full bg-gradient-to-r from-bubblegum via-lavender to-hologram animate-loading-bar" />
         </div>
         <p className="font-display text-white text-3xl md:text-5xl">
-          ✨ LEVEL 14 UNLOCKED ✨
+          ✨ IVY: LEVEL 14 UNLOCKED ✨
         </p>
         <p className="font-pixel text-zinc-500 text-xs uppercase tracking-widest mt-4">
           Press anywhere to enter the chaos
