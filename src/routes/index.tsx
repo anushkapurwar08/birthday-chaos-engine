@@ -9,12 +9,17 @@ import { InteractiveCake } from "@/components/InteractiveCake";
 import polaroidBesties from "@/assets/polaroid-besties.jpg";
 import babyMom from "@/assets/baby-mom.jpg";
 import age5 from "@/assets/age-5.jpg";
+import age8 from "@/assets/age-8.jpg";
 import age10 from "@/assets/age-10.jpg";
 import age12 from "@/assets/age-12.jpg";
 import age14 from "@/assets/age-14.jpg";
 import lore1 from "@/assets/lore-1.jpg";
 import lore2 from "@/assets/lore-2.jpg";
 import lore3 from "@/assets/lore-3.jpg";
+import ending1 from "@/assets/ending-1.jpg";
+import ending2 from "@/assets/ending-2.jpg";
+import ending3 from "@/assets/ending-3.jpg";
+import ending4 from "@/assets/ending-4.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -58,7 +63,7 @@ const LORE = [
 
 const AGES = [
   { n: "05", img: age5, color: "border-bubblegum", textColor: "text-bubblegum", label: "Baby Era", note: "Cake on face. World domination plan v1.", tilt: "rotate-3", offsetY: "" },
-  { n: "08", img: age10, color: "border-yellow-300", textColor: "text-yellow-500", label: "Pure Sunshine", note: "Roller skates and zero fear.", tilt: "-rotate-2", offsetY: "translate-y-12" },
+  { n: "08", img: age8, color: "border-yellow-300", textColor: "text-yellow-500", label: "Pure Sunshine", note: "Roller skates and zero fear.", tilt: "-rotate-2", offsetY: "translate-y-12" },
   { n: "10", img: age10, color: "border-lavender", textColor: "text-lavender", label: "Middle School…", note: "Double digits. Allegedly grown.", tilt: "rotate-2", offsetY: "" },
   { n: "12", img: age12, color: "border-hologram", textColor: "text-hologram", label: "Main Character Energy", note: "Headphones permanently attached.", tilt: "rotate-6", offsetY: "translate-y-8" },
   { n: "14", img: age14, color: "border-bubblegum", textColor: "text-bubblegum", label: "LEVEL 14", note: "You. Now. Iconic.", tilt: "-rotate-3", offsetY: "" },
@@ -196,7 +201,7 @@ function BirthdayCard() {
           {LORE.map((l) => (
             <div key={l.title} className="min-w-[300px] md:min-w-[360px] group cursor-pointer snap-start">
               <div className={`relative aspect-[16/10] rounded-md overflow-hidden border-2 border-transparent transition-all group-hover:scale-105 ${l.accent.replace("border-", "group-hover:border-")}`}>
-                <img src={l.img} alt={l.title} width={800} height={500} loading="lazy" className="w-full h-full object-cover" />
+                <img src={l.img} alt={l.title} width={800} height={500} loading="lazy" className="w-full h-full object-cover object-top" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="font-pixel text-xs text-bubblegum tracking-widest">{l.tag}</p>
@@ -265,7 +270,7 @@ function BirthdayCard() {
                   {a.n}
                 </span>
                 <div className={`w-64 md:w-72 aspect-[3/4] bg-white p-3 shadow-2xl border-b-8 ${a.color} ${a.tilt}`}>
-                  <img src={a.img} alt={`Age ${a.n}`} width={600} height={800} loading="lazy" className="w-full h-full object-cover" />
+                  <img src={a.img} alt={`Age ${a.n}`} width={600} height={800} loading="lazy" className="w-full h-full object-cover object-top" />
                 </div>
                 <div className="mt-6 max-w-[18ch]">
                   <p className="font-pixel uppercase tracking-widest text-sm text-zinc-500">Age {a.n}</p>
@@ -362,14 +367,14 @@ function BirthdayCard() {
               HAPPY BIRTHDAY, IVY ✨
             </h4>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 opacity-90">
-              {[babyMom, age10, age12, age14].map((img, i) => (
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-3 opacity-90">
+              {[babyMom, ending1, ending2, ending3, ending4].map((img, i) => (
                 <div
                   key={i}
                   className="aspect-square rounded-lg overflow-hidden border border-white/20"
-                  style={{ transform: `rotate(${(i - 1.5) * 3}deg)` }}
+                  style={{ transform: `rotate(${(i - 2) * 3}deg)` }}
                 >
-                  <img src={img} alt="" width={300} height={300} loading="lazy" className="w-full h-full object-cover" />
+                  <img src={img} alt="" width={300} height={300} loading="lazy" className="w-full h-full object-cover object-top" />
                 </div>
               ))}
             </div>
