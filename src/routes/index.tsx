@@ -127,7 +127,7 @@ function BirthdayCard() {
 
         <div className="container mx-auto h-full relative flex items-center justify-center min-h-[85vh] px-4">
           <h1 className="font-display text-6xl md:text-9xl text-center z-10 leading-none drop-shadow-[6px_6px_0px_var(--bubblegum)]">
-            BIRTHDAY
+            IVY'S
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-bubblegum via-lavender to-hologram animate-shimmer-bg">
               LORE
